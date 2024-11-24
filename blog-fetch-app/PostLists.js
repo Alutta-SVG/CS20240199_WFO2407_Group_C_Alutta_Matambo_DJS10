@@ -12,3 +12,6 @@ const PostsList = ({ posts }) => {
       </ul>
     );
   };
+
+
+export default PostsList;
