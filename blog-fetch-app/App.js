@@ -17,6 +17,17 @@ const App = () => {
             setLoading(false);
           }
         };
-        
-    }
-)} 
+        fetchPosts();
+    }, []);
+  
+    if (loading) return <p>Loading...</p>;
+  
+    return (
+      <div>
+        <h1>Blog Posts</h1>
+        {error ? <ErrorMessage message={error} /> : <PostsList posts={posts} />}
+      </div>
+    );
+  };
+  
+  export default App;
