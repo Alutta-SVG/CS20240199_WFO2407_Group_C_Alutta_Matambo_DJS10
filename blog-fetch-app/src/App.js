@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import PostsList from './components/PostsList';
+import PostsList from './Components/Postlists';
 import ErrorMessage from './Components/ErrorMessage';
 
 const App = () => {
